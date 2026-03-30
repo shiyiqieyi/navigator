@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "Ai",
+      "websites": [
+        {
+          "name": "豆包",
+          "url": "https://www.doubao.com/",
+          "icon": ""
+        },
+        {
+          "name": "千问",
+          "url": "https://www.qianwen.com/",
+          "icon": ""
+        }
+      ]
+    }
+  ]
+}

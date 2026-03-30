@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站导航</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>网站导航</h1>
+            <button id="addBtn" class="btn">+ 添加网站</button>
+        </header>
+        
+        <div id="groupsContainer"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">添加网站</h2>
+            <form id="websiteForm">
+                <div class="form-group">
+                    <label for="groupName">分组名称</label>
+                    <input type="text" id="groupName" placeholder="选择或输入新分组" required>
+                </div>
+                <div class="form-group">
+                    <label for="websiteName">网站名称</label>
+                    <input type="text" id="websiteName" placeholder="请输入网站名称" required>
+                </div>
+                <div class="form-group">
+                    <label for="websiteUrl">网站地址</label>
+                    <input type="url" id="websiteUrl" placeholder="https://example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="websiteIcon">网站图标URL (可选)</label>
+                    <input type="url" id="websiteIcon" placeholder="网站图标地址">
+                </div>
+                <button type="submit" class="btn btn-primary">保存</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
