@@ -7,11 +7,18 @@ const websiteForm = document.getElementById('websiteForm');
 const groupsContainer = document.getElementById('groupsContainer');
 const groupNameInput = document.getElementById('groupName');
 
-addBtn.onclick = () => {
+function openAddModal(preSelectedGroup = '') {
     modal.style.display = 'block';
     document.getElementById('modalTitle').textContent = '添加网站';
     websiteForm.reset();
     updateGroupSuggestions();
+    if (preSelectedGroup) {
+        document.getElementById('groupName').value = preSelectedGroup;
+    }
+}
+
+addBtn.onclick = () => {
+    openAddModal();
 };
 
 closeBtn.onclick = () => {
@@ -72,9 +79,11 @@ websiteForm.onsubmit = (e) => {
     const websiteIcon = document.getElementById('websiteIcon').value.trim();
 
     let group = data.groups.find(g => g.name === groupName);
-    if (!group) {
+    if (group) {
+        const groupIndex = data.groups.findIndex(g => g.name === groupName);
+        data.groups.splice(groupIndex, 1);
+    } else {
         group = { name: groupName, websites: [] };
-        data.groups.push(group);
     }
 
     group.websites.push({
@@ -82,6 +91,8 @@ websiteForm.onsubmit = (e) => {
         url: websiteUrl,
         icon: websiteIcon || ''
     });
+    
+    data.groups.push(group);
 
     saveData();
     modal.style.display = 'none';
@@ -135,8 +146,21 @@ function renderGroups() {
             openAllWebsites(group.name);
         };
         
+        const addToGroupBtn = document.createElement('button');
+        addToGroupBtn.className = 'btn btn-add-to-group';
+        addToGroupBtn.textContent = '添加网址';
+        addToGroupBtn.onclick = () => {
+            openAddModal(group.name);
+        };
+        
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.style.display = 'flex';
+        buttonsContainer.style.gap = '8px';
+        buttonsContainer.appendChild(addToGroupBtn);
+        buttonsContainer.appendChild(openAllBtn);
+        
         groupHeader.appendChild(groupTitle);
-        groupHeader.appendChild(openAllBtn);
+        groupHeader.appendChild(buttonsContainer);
         groupDiv.appendChild(groupHeader);
         
         const websitesGrid = document.createElement('div');

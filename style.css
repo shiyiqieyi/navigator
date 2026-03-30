@@ -72,6 +72,18 @@ header h1 {
     transform: translateY(-2px);
 }
 
+.btn-add-to-group {
+    background: #3498db;
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+.btn-add-to-group:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
 .group {
     background: white;
     border-radius: 12px;

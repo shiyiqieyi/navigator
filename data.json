@@ -1,6 +1,26 @@
 {
   "groups": [
     {
+      "name": "购物",
+      "websites": [
+        {
+          "name": "网易",
+          "url": "https://you.163.com/",
+          "icon": ""
+        },
+        {
+          "name": "京东",
+          "url": "https://www.jd.com/",
+          "icon": ""
+        },
+        {
+          "name": "淘宝",
+          "url": "https://www.taobao.com/",
+          "icon": ""
+        }
+      ]
+    },
+    {
       "name": "Ai",
       "websites": [
         {
@@ -11,6 +31,36 @@
         {
           "name": "千问",
           "url": "https://www.qianwen.com/",
+          "icon": ""
+        },
+        {
+          "name": "文心",
+          "url": "https://yiyan.baidu.com",
+          "icon": ""
+        },
+        {
+          "name": "kimi",
+          "url": "https://kimi.moonshot.cn/",
+          "icon": ""
+        },
+        {
+          "name": "讯飞",
+          "url": "https://xinghuo.xfyun.cn/",
+          "icon": ""
+        },
+        {
+          "name": "智谱",
+          "url": "https://chatglm.cn/",
+          "icon": ""
+        },
+        {
+          "name": "天工",
+          "url": "https://www.tiangong.cn/",
+          "icon": ""
+        },
+        {
+          "name": "deepseek",
+          "url": "https://chat.deepseek.com/",
           "icon": ""
         }
       ]
