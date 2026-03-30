@@ -60,6 +60,18 @@ header h1 {
     background: #c0392b;
 }
 
+.btn-open-all {
+    background: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+.btn-open-all:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+}
+
 .group {
     background: white;
     border-radius: 12px;

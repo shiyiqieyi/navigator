@@ -101,6 +101,15 @@ function deleteWebsite(groupName, websiteIndex) {
     }
 }
 
+function openAllWebsites(groupName) {
+    const group = data.groups.find(g => g.name === groupName);
+    if (group) {
+        group.websites.forEach(website => {
+            window.open(website.url, '_blank');
+        });
+    }
+}
+
 function getInitials(name) {
     return name.charAt(0).toUpperCase();
 }
@@ -119,7 +128,15 @@ function renderGroups() {
         groupTitle.className = 'group-title';
         groupTitle.textContent = group.name;
         
+        const openAllBtn = document.createElement('button');
+        openAllBtn.className = 'btn btn-open-all';
+        openAllBtn.textContent = '打开全部';
+        openAllBtn.onclick = () => {
+            openAllWebsites(group.name);
+        };
+        
         groupHeader.appendChild(groupTitle);
+        groupHeader.appendChild(openAllBtn);
         groupDiv.appendChild(groupHeader);
         
         const websitesGrid = document.createElement('div');
