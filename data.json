@@ -62,6 +62,26 @@
           "name": "deepseek",
           "url": "https://chat.deepseek.com/",
           "icon": ""
+        },
+        {
+          "name": "秘塔",
+          "url": "https://metaso.cn/?s=sbypja&referrer_s=sbypja",
+          "icon": ""
+        },
+        {
+          "name": "grok",
+          "url": "https://grok.com/",
+          "icon": ""
+        },
+        {
+          "name": "gpt",
+          "url": "https://chatgpt.com/",
+          "icon": ""
+        },
+        {
+          "name": "gemini",
+          "url": "https://gemini.google.com/",
+          "icon": ""
         }
       ]
     }
