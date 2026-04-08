@@ -82,6 +82,36 @@
           "name": "gemini",
           "url": "https://gemini.google.com/",
           "icon": ""
+        },
+        {
+          "name": "copilot",
+          "url": "https://copilot.microsoft.com/",
+          "icon": ""
+        },
+        {
+          "name": "商量",
+          "url": "https://chat.sensetime.com/",
+          "icon": ""
+        },
+        {
+          "name": "元宝",
+          "url": "https://yuanbao.tencent.com/chat/naQivTmsDa/3f201559-fd79-489c-93be-ee9bbb92eea8",
+          "icon": ""
+        },
+        {
+          "name": "灵光",
+          "url": "https://www.lingguang.com/chat",
+          "icon": ""
+        },
+        {
+          "name": "notebooklm",
+          "url": "https://notebooklm.google.com/notebook/806e2b4c-1ff8-410d-9fee-40f7fdc320b9?addSource=true",
+          "icon": ""
+        },
+        {
+          "name": "perplexity",
+          "url": "https://www.perplexity.ai/",
+          "icon": ""
         }
       ]
     }
