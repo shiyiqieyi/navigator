@@ -44,11 +44,6 @@
           "icon": ""
         },
         {
-          "name": "讯飞",
-          "url": "https://xinghuo.xfyun.cn/",
-          "icon": ""
-        },
-        {
           "name": "智谱",
           "url": "https://chatglm.cn/",
           "icon": ""
@@ -111,6 +106,21 @@
         {
           "name": "perplexity",
           "url": "https://www.perplexity.ai/",
+          "icon": ""
+        },
+        {
+          "name": "autoGLM",
+          "url": "https://autoglm.zhipuai.cn/",
+          "icon": ""
+        },
+        {
+          "name": "扣子",
+          "url": "https://www.coze.cn/",
+          "icon": ""
+        },
+        {
+          "name": "讯飞",
+          "url": "https://xinghuo.xfyun.cn/desk",
           "icon": ""
         }
       ]

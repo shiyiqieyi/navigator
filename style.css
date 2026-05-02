@@ -176,7 +176,25 @@ header h1 {
     transition: opacity 0.3s ease;
 }
 
-.website-card:hover .delete-btn {
+.edit-btn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #3498db;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.website-card:hover .delete-btn,
+.website-card:hover .edit-btn {
     opacity: 1;
 }
 
